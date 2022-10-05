@@ -12,7 +12,7 @@ class Doll(commands.Cog):
     async def on_ready(self):
         self.dollar_to_real.start()
 
-    @tasks.loop(minutes=5)
+    @tasks.loop(hours=1)
     async def dollar_to_real(self):
         try:    
             response = requests.get("https://economia.awesomeapi.com.br/json/last/USD-BRL")
