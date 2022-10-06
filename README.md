@@ -4,7 +4,7 @@
 
 #### Algumas alteraçoes devem ser feitas para poder rodar em qualquer ambiente(adicionar o id do chat no codigo, renovar o token do bot etc.)
 
-#### Deploy feito no Heroku de forma gratuita.
+#### Deploy feito no Heroku.
 
 </br >
 
