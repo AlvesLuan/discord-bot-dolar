@@ -1,9 +1,3 @@
-
-
-
-
-#### recomendado utilizar o heroku para upar.
-
 # Bot que consulta a cotação do Dólar.
 
 #### Bot que retorna o valor atual do dolar em qualquer server do discord, feito utilizando apenas Python.
