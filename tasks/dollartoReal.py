@@ -24,7 +24,7 @@ class Doll(commands.Cog):
             timeNow = now.strftime("%d/%m/%Y ás %H:%M:%S")
 
             channel = self.bot.get_channel(1027341105123041280)
-            await channel.send(f"\n ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n💸 Dólar : R${cotacao_dolar}\n\n📅 Em: {timeNow}  \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n(próxima busca em 5 minuto)\n ")
+            await channel.send(f"\n ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n💸 Dólar : R${cotacao_dolar}\n\n📅 Em: {timeNow}  \n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n(próxima busca em 1 hora)\n ")
             
 
         except Exception as error:
