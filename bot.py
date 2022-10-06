@@ -9,6 +9,8 @@ import discord
 
 bot = commands.Bot(command_prefix = "!", intents = discord.Intents.all())
 
+# bot = commands.Bot("!")
+
 def load_cogs(bot):
     bot.load_extension("manager")
     bot.load_extension("tasks.dollartoReal")
