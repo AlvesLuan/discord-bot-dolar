@@ -3,11 +3,11 @@ from decouple import config
 from discord.ext import commands
 import discord
 
-intents = discord.Intents.default()
+#intents = discord.Intents.default()
 #intents = discord.Intents.all()
 #intents.members = True
 
-bot = commands.Bot(command_prefix = "!", intents=intents)
+bot = commands.Bot(command_prefix = "!", intents = discord.Intents.all())
 
 def load_cogs(bot):
     bot.load_extension("manager")
