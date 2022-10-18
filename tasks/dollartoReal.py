@@ -1,4 +1,5 @@
 import datetime
+from datetime import time
 import requests
 from discord.ext import commands, tasks
 
@@ -12,9 +13,7 @@ class Doll(commands.Cog):
     async def on_ready(self):
         self.dollar_to_real.start()
 
-    @tasks.loop(hours=1)
-    async def dollar_to_real(self):
-        now = datetime.datetime.now()
+
     @tasks.loop(hours=1)
     async def dollar_to_real(self):
         now = datetime.datetime.now()
@@ -38,8 +37,6 @@ class Doll(commands.Cog):
                 except Exception as error:
                     await channel.send("Ops... Ocorreu algum problema na consulta )")
                     print(error)
-
-
 
 
 
