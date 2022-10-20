@@ -20,7 +20,7 @@ class Doll(commands.Cog):
         #NÃO RODA NOS FINAIS DE SEMANA!
         if ( now.weekday() != 5 and now.weekday() != 6):
             #RODA APENAS DE 9:00 AS 18 (GMT-3 & UTC−3)
-            if ( now.hour <= 9 and now.hour >= 18):
+            if ( now.hour >= 9 and now.hour <= 21):
                 try:    
                     response = requests.get("https://economia.awesomeapi.com.br/json/last/USD-BRL")
                     data = response.json()
